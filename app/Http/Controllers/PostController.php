@@ -17,7 +17,7 @@ class PostController extends Controller
     {
         return response()->json($this->postRepository->all());
     }
-
+    
     public function store(Request $request)
     {
         $data = $request->validate([
